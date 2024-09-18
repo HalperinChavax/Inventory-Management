@@ -13,7 +13,7 @@ class InventoryInterface(ABC):
         pass
 
     @abstractmethod
-    def get_product(self, product_name: str) -> Product:
+    def get_product_by_name(self, product_name: str) -> Product:
         pass
 
     @abstractmethod
