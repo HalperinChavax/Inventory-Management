@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from Product import Product
 
+
 class InventoryInterface(ABC):
 
     @abstractmethod
@@ -17,4 +18,7 @@ class InventoryInterface(ABC):
 
     @abstractmethod
     def get_total_inventory_value(self) -> float:
+        pass
+
+    def is_product_exists(self, product) -> bool:
         pass

@@ -1,1 +1,1 @@
-class Product:    def __init__(self, name: str, price: float):        if price < 0:            raise ValueError("Price cannot be negative.")        self.name = name        self.price = price
+class Product:    def __init__(self, id: int, name: str, price: float):        self.id = id        self.name = name        self.price = price
