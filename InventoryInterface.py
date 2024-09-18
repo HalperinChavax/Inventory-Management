@@ -9,7 +9,7 @@ class InventoryInterface(ABC):
         pass
 
     @abstractmethod
-    def remove_product(self, product_name: str) -> None:
+    def remove_product_by_name(self, product_name: str) -> None:
         pass
 
     @abstractmethod

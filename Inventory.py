@@ -12,7 +12,7 @@ class Inventory(InventoryInterface, ABC):
         if not self.is_product_exist(product.name):
             self.products[product.name] = product
 
-    def remove_product(self, product_name: str) -> None:
+    def remove_product_by_name(self, product_name: str) -> None:
         if self.get_product_by_name(product_name):
             del self.products[product_name]
 

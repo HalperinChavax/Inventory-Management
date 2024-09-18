@@ -26,7 +26,7 @@ def test_get_product_by_name(inventory, product):
 def test_remove_product(inventory, product):
     inventory.add_product(product)
     len_before_remove = len(inventory.products)
-    inventory.remove_product("Cherry")
+    inventory.remove_product_by_name("Cherry")
     assert len(inventory.products) == len_before_remove - 1
 
 
